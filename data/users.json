@@ -1,0 +1,27 @@
+{
+  "umei": {
+    "username": "umei",
+    "email": "Warsash",
+    "salt": "ae7a6bbe3c8a6e507f031b5f514ace1c",
+    "password_hash": "a4ecef474680f6c0b202ce9056f6bfd038d0a48eb4b59d714262de3049ea6093",
+    "created_at": 1790429758.9107914
+  },
+  "meimei": {
+    "username": "meimei",
+    "email": "i.zalla@esi-sba.dz",
+    "salt": "dc856b0da375e24dd41ad2d19b0fa26e",
+    "password_hash": "800addd977618536713351dbb2f27c18702d9534d127a866c76ec246215d2b4e",
+    "created_at": 1790457664.6533465,
+    "verified": true
+  },
+  "imene": {
+    "username": "imene",
+    "email": "i.zouggari@esi-sba.dz",
+    "salt": "bab1c953a0c04d41ac5512c408cb3d7e",
+    "password_hash": "b41fa54ac01e66e875f130c90c3744fdb32dcf4c4d61676968a347d8ad515c25",
+    "created_at": 1790457937.6374254,
+    "verified": false,
+    "verification_code": "074980",
+    "verification_code_expires": 1790458837.6374254
+  }
+}

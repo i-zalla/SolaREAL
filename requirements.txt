@@ -1,0 +1,13 @@
+streamlit>=1.38,<2
+torch
+torchvision
+numpy
+pandas
+opencv-python
+mediapipe==0.10.21
+librosa
+joblib
+scikit-learn
+transformers==4.57.1
+ultralytics
+safetensors
