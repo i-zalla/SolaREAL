@@ -687,10 +687,8 @@ uploaded = st.file_uploader(
     type=["mp4", "mov", "avi", "mkv", "webm"],
 )
 
-
 if uploaded:
-    video_bytes = uploaded.getvalue()
-    st.video(video_bytes)
+    st.video(uploaded)
 
     if st.button(
         "ANALYZE VIDEO",
@@ -703,7 +701,7 @@ if uploaded:
             delete=False,
             suffix=suffix,
         ) as tmp:
-            tmp.write(video_bytes)
+            tmp.write(uploaded.getbuffer())
             saved_path = tmp.name
 
         if not st.session_state.logged_in:
