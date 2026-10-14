@@ -1,3 +1,6 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
 absl-py==2.5.0
 altair==5.5.0
 attrs==26.1.0
@@ -41,8 +44,7 @@ networkx==3.4.2
 numba==0.67.0
 numpy==2.2.6
 nvidia-ml-py==13.610.43
-opencv-contrib-python==5.0.0.93
-opencv-python==5.0.0.93
+opencv-python-headless==4.11.0.86
 packaging==24.2
 pandas==2.3.3
 pillow==10.4.0
