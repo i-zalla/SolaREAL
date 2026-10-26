@@ -688,8 +688,9 @@ uploaded = st.file_uploader(
 )
 
 if uploaded:
-    st.video(uploaded)
-
+    video_bytes = uploaded.getvalue()
+    st.video(video_bytes, format=uploaded.type or "video/mp4")
+    
     if st.button(
         "ANALYZE VIDEO",
         type="primary",
