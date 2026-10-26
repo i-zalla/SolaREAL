@@ -31,6 +31,17 @@ DATA_DIR = project_root / "data"
 USERS_PATH = DATA_DIR / "users.json"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
+# ============================================================
+# DEMO
+# ============================================================
+DEMO_USERNAME = "user"
+DEMO_PASSWORD = "solareal2026"
+
+def _is_demo_login(username, password):
+    return (
+        hmac.compare_digest(username.strip().lower().encode("utf-8"), DEMO_USERNAME.encode("utf-8"))
+        and hmac.compare_digest(password.encode("utf-8"), DEMO_PASSWORD.encode("utf-8"))
+    )
 
 DETECTOR_PAGE = "pages/1_Detector.py"
 
@@ -151,6 +162,9 @@ def verify_code(username, code):
 
 
 def authenticate(username, password):
+    if _is_demo_login(username, password):
+        return True, {"username": DEMO_USERNAME}
+
     users = _load_users()
     key = username.strip().lower()
     user = users.get(key)
