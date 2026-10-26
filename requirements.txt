@@ -1,7 +1,7 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.7.1
 torchvision==0.22.1
-streamlit
+streamlit==1.38.0
 numpy==1.26.4
 opencv-python-headless==4.11.0.86
 mediapipe==0.10.9
